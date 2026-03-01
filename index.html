@@ -1,68 +1,118 @@
+<!DOCTYPE html>
 <html>
-<center>
-<img src="CanFlag.jpg" alt="canada flag">
-</center>
-<title>Immigration:Home Page</title>
+<head>
+    <meta charset="UTF-8">
+    <title>Immigration: Home Page</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-  
-<body bgcolor = "#f7cb83" style = margin:170>
+    <style>
+        body {
+            background-color: #f7cb83;
+            margin: 100px 170px; /* Top/Bottom 100px, Left/Right 170px */
+            font-family: Sans-serif;
+            font-size: 18px; /* Equivalent to size 4 */
+            line-height: 1.6;
+        }
 
-<font face = "Times New Roman" size = "8"><b><i><p align = "center"> Welcome to Canada!</p></b></i></font>
-<img src = "Parliament.jpg" alt = "Parliament" width = "254.4" height ="351.36" border = "2" align = "right" vspace = 100 hspace = 350>
-</font>
-<font face ="Sans-serif" size = "4"> 
+        .header-title {
+            font-family: "Times New Roman", serif;
+            font-size: 48px; /* Equivalent to size 8 */
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            color: #b1232a;
+        }
 
-<p>
-Welcome to Canada, a vast and varied land. 
-Canada occupies most of northern North 
-America, extending from the Atlantic Ocean in 
-the east to the Pacific Ocean in the west, and 
-north into the Arctic Ocean.
-</p>
+        .flag-top {
+            display: block;
+            margin: 0 auto 20px auto;
+        }
 
-<p>Canada is the second largest country in the 
-world. Canada contains high jagged mountains 
-in the west, relatively flat grass lands through    
-much of the prairie region, low rolling glaciated 
-mountains through the central and eastern 
-parts of the country, and fertile lowlands in 
-Southern Ontario and Quebec.</p>
+        .parliament-img {
+            float: right;
+            border: 2px solid black;
+            margin: 20px 0 20px 40px;
+        }
 
-  
-<p>The Canadian climate varies widely, from 
-temperate in southern and coastal areas to 
-subarctic and arctic in the north. Winter 
-temperatures in many regions can reach -35°C, 
-—or colder—while summer temperatures in some areas can  exceed 30°C.</p> </font> 
-<br><br>
-<i>
-<hr color = "#660110">
-<p align = center><font face = "Times New Roman" size = "5">
-Canada contains ten provinces, from the four Atlantic 
-provinces in the east to the central provinces of Quebec 
-and Ontario, then west to the three Prairie provinces and 
-finally to British Columbia on the Pacific Coast. There 
-are also three Northern Territories, covering a vast area 
-but with a small population. </p></i>
-<hr color = "#660110">
-</font>
-<font face ="Sans-serif" size = "4"> 
-Approximately 90% of Canada’s population is concentrated within 250 km of the 
-border with the United States. About 80% of Canada’s population lives in urban areas, 
-the rest live in small towns, villages and rural or remote areas.
-<br><br>
+        .info-box {
+            font-family: "Times New Roman", serif;
+            font-size: 20px;
+            text-align: center;
+            font-style: italic;
+        }
 
-</font>
-<br><br>
-<font face ="Sans-serif" size = "5"> 
-<a href = "Documents.html">Documents to bring </a>
-<br><br>
-<a href = "customs.html"> Customs and Immigration</a>
-<br><br>
-<a href = "Canada-facts.html"> Facts about Canada</a>
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: #660110;
+        }
 
-<br><br>
-<a href = "link_table_with_menu"> Link table version</a>
+        .nav-links {
+            font-size: 24px;
+            margin-top: 40px;
+        }
 
+        /* Clears the float so text doesn't wrap weirdly below the image */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
 
+<body>
+
+    <img src="CanFlag.jpg" alt="Canada flag" class="flag-top">
+
+    <div class="header-title">Welcome to Canada!</div>
+
+    <div class="clearfix">
+        <img src="Parliament.jpg" alt="Parliament" width="254" height="351" class="parliament-img">
+        
+        <p>
+            Welcome to Canada, a vast and varied land. 
+            Canada occupies most of northern North America, extending from the Atlantic Ocean in 
+            the east to the Pacific Ocean in the west, and north into the Arctic Ocean.
+        </p>
+
+        <p>
+            Canada is the second largest country in the world. Canada contains high jagged mountains 
+            in the west, relatively flat grass lands through much of the prairie region, low rolling glaciated 
+            mountains through the central and eastern parts of the country, and fertile lowlands in 
+            Southern Ontario and Quebec.
+        </p>
+
+        <p>
+            The Canadian climate varies widely, from temperate in southern and coastal areas to 
+            subarctic and arctic in the north. Winter temperatures in many regions can reach -35°C, 
+            —or colder—while summer temperatures in some areas can exceed 30°C.
+        </p>
+    </div>
+
+    <hr>
+    <div class="info-box">
+        Canada contains ten provinces, from the four Atlantic 
+        provinces in the east to the central provinces of Quebec 
+        and Ontario, then west to the three Prairie provinces and 
+        finally to British Columbia on the Pacific Coast. There 
+        are also three Northern Territories, covering a vast area 
+        but with a small population.
+    </div>
+    <hr>
+
+    <p>
+        Approximately 90% of Canada’s population is concentrated within 250 km of the 
+        border with the United States. About 80% of Canada’s population lives in urban areas, 
+        the rest live in small towns, villages and rural or remote areas.
+    </p>
+
+    <div class="nav-links">
+        <a href="Documents.html">Documents to bring</a><br><br>
+        <a href="customs.html">Customs and Immigration</a><br><br>
+        <a href="Canada-facts.html">Facts about Canada</a><br><br>
+        <a href="link_table_with_menu">Link table version</a>
+    </div>
+
+</body>
+</html>
